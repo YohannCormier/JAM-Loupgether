@@ -1,0 +1,543 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: linear-gradient( 90deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+    height: 100%;
+}
+
+header {
+    min-width: 625px;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px 5%;
+    border-radius: 20px;
+    box-shadow: .3rem .3rem 2rem rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, .15); 
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    margin-right: auto;
+}
+
+nav {
+    margin-right: auto;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nav_links a,
+.cta {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.nav_links li {
+    padding: 20px 20px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+  
+.nav_links li a:hover {
+    color: #0984e3;
+}
+  
+.cta {
+    margin-left: 20px;
+    padding: 15px 25px;
+    background-color: #2d3436;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    height: 50px;
+}
+
+.cta:hover {
+    background-color: #0984e3;
+}
+
+#event_creation_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 80px;
+}
+
+#event_creation_btn {
+    border: none;
+    height: 200px;
+    width: 35%;
+    min-width: 350px;
+    border-radius: 20px;
+    box-shadow: .3rem .3rem 2rem rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, .15); 
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#event_creation_btn:hover {
+    height: 225px;
+    width: 39%;
+    background-color: #0984e3;
+}
+
+#event_creation_btn h1 {
+    font-size: 100px;
+    color: #1e272e;
+    margin-top: -30px;
+    color: #fff;
+
+}
+
+#event_creation_btn h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+@media screen and (max-width:960px) {
+    .nav_links a, .cta {
+        font-size: 13px;
+        display: inline-block;
+    }
+    .nav_links a {
+        margin-right: 30px;
+    }
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo img {
+    transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width:830px) {
+    .logo img {
+        height: 70px;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+.qui-sommes {
+    height: auto;
+    min-width: 600px;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+    box-shadow: .3rem .3rem 2rem rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, .15); 
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease 0s;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    font-family:'Montserrat',sans-serif;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.title::after {
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+
+.subtitle {
+    padding-top: 50px;
+    font-size: 40px;
+    color: #fff;
+    font-family:'Montserrat',sans-serif;
+    text-align: center;
+}
+
+.txt {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #fff;
+    font-family:'Montserrat',sans-serif;
+    font-size: 20px;
+}
+
+footer {
+    height: 100px;
+}
+
+.image {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* card*/
+
+.card_section {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 2rem 0;
+	display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+
+.card {
+	background-color: #fff;
+	max-width: 360px;
+    min-width: 360px;
+	display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+	flex-direction: column;
+	overflow: hidden;
+	border-radius: 2rem;
+    transition: all 0.3s ease 0s;
+	box-shadow: 0px 1rem 1.5rem rgba(0,0,0,0.5);
+}
+
+.card .banner1 {
+	background-image: url("https://images8.alphacoders.com/372/372210.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 11rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.card .banner2 {
+	background-image: url("https://blooloop.com/wp-content/uploads/2020/04/empty-cinema.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 11rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.card .banner3 {
+	background-image: url("https://thewallpaper.co/wp-content/uploads/2020/07/game-of-thrones-wallpapers-hd-trailer-download-4k-high-definition-amazing-colourful-pictures-mac-desktop-images-widescreen-1920x1080-1-1200x675.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 11rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.card .banner1 svg {
+	background-color: #fff;
+	width: 8rem;
+	height: 8rem;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+	border-radius: 50%;
+	transform: translateY(50%);
+	transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.card .banner2 svg {
+	background-color: #fff;
+	width: 8rem;
+	height: 8rem;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+	border-radius: 50%;
+	transform: translateY(50%);
+	transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.card .banner3 svg {
+	background-color: #fff;
+	width: 8rem;
+	height: 8rem;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+	border-radius: 50%;
+	transform: translateY(50%);
+	transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.card .menu {
+	width: 100%;
+	height: 5.5rem;
+	padding: 1rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.card .menu .opener {
+	width: 2.5rem;
+	height: 2.5rem;
+	position: relative;
+	border-radius: 50%;
+	transition: background-color 100ms ease-in-out;
+}
+
+.card .menu .opener:hover {
+	background-color: #f2f2f2;
+}
+
+.card .menu .opener span {
+	background-color: #404040;
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 0.2rem);
+	border-radius: 50%;
+}
+
+.card .menu .opener span:nth-child(1) {
+	top: 0.45rem;
+}
+
+.card .menu .opener span:nth-child(2) {
+	top: 1.05rem;
+}
+
+.card .menu .opener span:nth-child(3) {
+	top: 1.65rem;
+}
+
+.card h2.name {
+	text-align: center;
+	padding: 0 2rem 0.5rem;
+	margin: 0;
+}
+
+.card .title_card {
+	color: #a0a0a0;
+	font-size: 0.85rem;
+	text-align: center;
+	padding: 0 2rem 1.2rem;
+}
+
+.card .actions {
+	padding: 0 2rem 1.2rem;
+	display: flex;
+	flex-direction: column;
+	order: 99;
+}
+
+.card .actions .follow-info {
+	padding: 0 0 1rem;
+	display: flex;
+}
+
+.card .actions .follow-info h2 {
+	text-align: center;
+	width: 50%;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.card .actions .follow-info h2 a {
+	text-decoration: none;
+	padding: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.8rem;
+	transition: background-color 100ms ease-in-out;
+}
+
+.card .actions .follow-info h2 a span {
+	color: #1c9eff;
+	font-weight: bold;
+	transform-origin: bottom;
+	transform: scaleY(1.3);
+	transition: color 100ms ease-in-out;
+}
+
+.card .actions .follow-info h2 a small {
+	color: #afafaf;
+	font-size: 0.85rem;
+	font-weight: normal;
+}
+
+.card .actions .follow-info h2 a:hover {
+	background-color: #f2f2f2;
+}
+
+.card .actions .follow-info h2 a:hover span {
+	color: #007ad6;
+}
+
+.card .actions .follow-btn button {
+	color: inherit;
+	font: inherit;
+    color: #fff;
+	font-weight: bold;
+	background-color: #54a0ff;
+	width: 100%;
+	border: none;
+	padding: 1rem;
+	outline: none;
+	box-sizing: border-box;
+	border-radius: 1.5rem/50%;
+	transition: background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.card .actions .follow-btn button:hover {
+	background-color: #2e86de;
+	transform: scale(1.1);
+}
+
+.card .actions .follow-btn button:active {
+	transform: scale(1);
+}
+
+.card .desc {
+	text-align: justify;
+	padding: 0 2rem 2.5rem;
+    margin-top: -10px;
+	order: 100;
+}
+
+.card .tags {
+	text-align: center;
+	padding: 0 2rem 2.5rem;
+    margin-top: 5px;
+    font-size: 18px;
+	order: 100;
+}
+
+.card_section {
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+}
+
+.dec {
+    width: 300px;
+    position: relative;
+    height: 200px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.deco_button button {
+    margin-top: 300px;
+	color: inherit;
+	font: inherit;
+    color: #fff;
+	font-weight: bold;
+	background-color: #e74c3c;
+	width: 100%;
+	border: none;
+	padding: 1rem;
+	outline: none;
+	box-sizing: border-box;
+	border-radius: 1.5rem/50%;
+	transition: background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.deco_button button:hover {
+	background-color: #c0392b;
+	transform: scale(1.1);
+}
+
+.deco_button button:active {
+	transform: scale(1);
+}
+
+.card .desc {
+	text-align: center;
+    justify-content: center;
+    display: flex;
+	padding: 0 2rem 2.5rem;
+    position: relative;
+    font-size: 18px;
+	order: 100;
+}
+
+.one_tag {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.center_txt {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #fff;
+    font-family:'Montserrat',sans-serif;
+    font-size: 20px;
+}
+
+.contact_div {
+    height: auto;
+    min-width: 600px;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+    box-shadow: .3rem .3rem 2rem rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, .15); 
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease 0s;
+}
+
+.center_txt {
+    padding-bottom: 50px;
+}
+
+.center_txt p{
+    margin-bottom: 20px;
+}
+
+.center_txt iframe{
+    border-radius: 10px;
+    margin-top: 20px;
+}

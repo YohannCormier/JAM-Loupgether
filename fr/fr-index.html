@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LoupGether | Connexion</title>
+    <link href="style/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <script defer src="script/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <div class="logo" data-aos="fade-in" data-aos-duration="2000">
+                <img src="images/logo-black.png" height="100px">
+                <h1>LoupGether</h1>
+                <p>En meute on est plus fort !</p>
+            </div>
+            <form action="/co" method='POST' data-aos="fade-in">
+                <h1 class="title">Connexion</h1>
+                <input type="email" id="email" name="email" placeholder="Email" required/>
+                <input type="password" id="password" name="password" placeholder="Mot de Passe" required/>
+                <button>Se connecter</button>
+            </form>
+            <div class="flags" data-aos="fade-in">
+                <a href="../en/en-index.html"><img src="images/ang.png" height="50px"></a>
+                <a href="../esp/esp-index.html"><img src="images/esp.jpg" height="50px"></a>
+            </div>
+        </div>
+        <div class="form-container sign-up-container">
+            <form action="/fr/forum.html" method='POST' data-aos="fade-up">
+                <h1 class="title">Créer un compte</h1>
+                <input type="text" id="name" name="name" placeholder="Nom" required/>
+                <input type="email" id="email" name="email" placeholder="Email" required/>
+                <input type="password" id="password" name="password" placeholder="Mot de Passe" required/>
+                <button>S'inscrire</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left" data-aos="fade-up">
+                    <h1>Tu possedes un compte ?</h1>
+                    <p>Connectes toi par ici !</p>
+                    <button class="ghost" id="signIn">Connexion</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1 data-aos="fade-in">Tu ne possede pas de compte ?</h1>
+                    <p data-aos="fade-in">Rejoins nous des maintenant !</p>
+                    <button data-aos="fade-in" class="ghost" id="signUp">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
